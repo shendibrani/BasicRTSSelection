@@ -162,8 +162,7 @@ public class AdvancedSelection : MonoBehaviour
     {
         Vector2 min = new Vector2(float.MaxValue, float.MaxValue);
         Vector2 max = new Vector2(float.MinValue, float.MinValue);
-        Camera cam = Camera.main;
-
+ 
         foreach (Vector3 corner in worldCorners)
         {
             Vector3 screenPos = cam.WorldToScreenPoint(corner);
